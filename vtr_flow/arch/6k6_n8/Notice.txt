@@ -1,0 +1,2 @@
+k6_n8.xml  is our own architecture. 
+Modified based on k6_N10_memDepth16384_memData64_40nm_timing.xml (In VPR 6.0 benchmark)

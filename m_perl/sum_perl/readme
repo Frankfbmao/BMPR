@@ -1,0 +1,23 @@
+sum_blif: move blif and net file to blif folder
+sum_module: move pre-vpr.net to module folder
+sum_place: move .place to place folder
+
+move_blif: move revised blif to benchmark folder.
+move_module: move module.net to /vpr/test.
+
+for example of raygentop with 6k6_n8.xml arch file.
+1. run VPR script (.v)
+2. go to sum_perl
+3. perl sum_blif.pl run1 list.txt
+4. go to blif
+5. perl blif.pl list.txt
+6. go to sum_perl
+7. perl move_blif.pl raygentop list.txt
+8. run vpr script (.pre-vpr.blif)
+9. go to sum_perl
+10. perl sum_module.pl run2 list.txt
+12. go to module
+13. perl module.pl raygentop list.txt
+14. go to sum_perl
+15. perl move_module.pl raygentop
+16. run vpr under /test folder.
