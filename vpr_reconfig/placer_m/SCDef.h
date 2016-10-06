@@ -38,8 +38,8 @@
 # define MUSTJOINNETSIZE 1000
 # define COUNT           100000
 # define MAXLENGTH       100000
-# define SOURCE          0
-# define SINK            1
+////# define SOURCE          0      ///conflict with the file vpr_types.h    fbmao revised
+///# define SINK            1
 # define SPOINT          2
 # define SPECIAL         3
 # define CRITICAL        4

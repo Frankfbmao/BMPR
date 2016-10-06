@@ -4,7 +4,7 @@
 
 
 #include <stdlib.h>
-#include "sttools.h"
+//#include "sttools.h"
 /*
 The following define exclude the ScSteiner.h
 I think we should not define variables in include files.
