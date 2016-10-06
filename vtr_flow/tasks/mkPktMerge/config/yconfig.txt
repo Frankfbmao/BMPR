@@ -1,0 +1,44 @@
+#
+############################################
+# Configuration file for running experiments
+##############################################
+
+
+# Path to directory of circuits to use
+circuits_dir=benchmarks/mkPktMerge
+
+# Path to directory of architectures to use
+archs_dir=arch/6k6_n8
+
+
+# Add circuits to list to sweep
+#circuit_list_add=mkPktMerge.pre-vpr.blif
+circuit_list_add=fi0.pre-vpr.blif
+circuit_list_add=fi1.pre-vpr.blif
+circuit_list_add=fo.pre-vpr.blif
+circuit_list_add=mkPktMergetop.pre-vpr.blif
+
+
+
+
+
+
+# Add architectures to list to sweep
+#arch_list_add=6k6_n8_50.xml
+#arch_list_add=6k6_n8_25.xml
+#arch_list_add=6k6_n8_16.xml
+#arch_list_add=6k6_n8_12.xml
+#arch_list_add=6k6_n8_10.xml
+arch_list_add=6k6_n8_10.xml
+#arch_list_add=6k6_n8_08.xml
+#arch_list_add=6k6_n8_06.xml
+#arch_list_add=6k6_n8_04.xml
+#arch_list_add=6k6_n8_02.xml
+
+# Parse info and how to parse
+parse_file=vpr_standard.txt
+
+# Pass requirements
+pass_requirements_file=pass_requirements.txt
+
+script_params=-starting_stage vpr -keep_intermediate_files
