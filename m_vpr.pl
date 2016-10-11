@@ -16,8 +16,17 @@ system("../../vpr_reconfig/placer_m/btree $mainname -arch $arch -nosplit");
 #system("../../btree $mainname -arch $arch");
 chdir("$mainname/") or die "$!";
 
+#change place file position
+#1. if multi-ratio flow
+system("cp multiratio/$mainname.place .");
+
+#2. Notice: if one-ratio flow, need to change the script.  comment the sentences above and uncoment the sentence below
+#system("cp oneratio/$mainname.place .");
+
 #edit arch
 system("perl ../../../m_perl/arch_ratio.pl $arch $mainname");
+#system("perl ../../../m_perl/splitarch_ratio.pl $arch $mainname");
+
 
 ##route
 #system("../../../vpr_reconfig/vpr $arch $mainname -route -nodisp -route_chan_width 200");
