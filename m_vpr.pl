@@ -12,7 +12,7 @@ chdir("vtr_flow/tasks/") or die "$!";
 
 
 ## btree place
-system("../../vpr_reconfig/placer_m/btree $mainname -arch $arch");
+system("../../vpr_reconfig/placer_m/btree $mainname -arch $arch -nosplit");
 #system("../../btree $mainname -arch $arch");
 chdir("$mainname/") or die "$!";
 
